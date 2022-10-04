@@ -114,16 +114,19 @@ body {
 
 .header-contacts {
   padding: 32px 0;
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: var(--top-ht);
   letter-spacing: 0.02em;
   color: var(--top-text-color);
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-icon {
-  fill: #757575;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .header-connect {
@@ -134,6 +137,11 @@ body {
 .header-link:hover,
 .header-link:focus {
   color: var(--top-adress-color);
+}
+
+.header-contacts:hover .contacts-icon,
+.header-contacts:focus .contacts-icon {
+  color: #2196F3;
 }
 
 /*----------------HERO-----------------*/
@@ -196,12 +204,11 @@ body {
 }
 
 .benefits-item {
-  width: 270px;
-  height: 120px;
   width: calc((100%-90) / 4);
 }
 
 .benefits-link {
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,7 +315,6 @@ body {
 .team-soc-list {
   display: flex;
   gap: 10px;
-  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -334,7 +340,6 @@ body {
 }
 
 .clients-top-title {
-  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -345,7 +350,6 @@ body {
 }
 
 .clients-list {
-  padding-bottom: 94px;
   display: flex;
 }
 
@@ -482,14 +486,18 @@ body {
 }
 
 .progects-list-content {
-    border-width: 0 0 1px 0;
-    border-color: #EEEEEE;
+  border-width: 0 0 1px 0;
+  border-color: #EEEEEE;
 }    
 
 .progects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.progects-list-item {
+  width: calc((100% - 60px) / 3);
 }
 
 .progects-item-content {
